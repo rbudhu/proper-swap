@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Proper Swap Demo</title>
+  </head>
+  <body>
+    <div id="source1" style="margin:40px; background-color: #CCC; position: relative">Source</div>
+    <div id="target1" style="margin:40px; background-color: #CCC; position: relative">Target</div>
+    <ul>
+      <li id="target2" style="position: relative">Target 2</li>
+      <li>In between</li>
+      <li id="source2" style="position: relative">Source 2</li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script src="proper-swap.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('#source1').click(function() {
+            $(this).swap($('#target1'), {duration:1000});
+        });
+        $('#source2').click(function() {
+            $(this).swap($('#target2'));
+        });
+      });
+    </script>
+    </body>
+</html>
