@@ -13,6 +13,8 @@ You can also specify animation duration and a callback function to be executed w
 $('#source').click(function() { $(this).swap($('#target'), {duration: 800}, function() { alert('Done!'); }) });
 ```
 
+Remember to add `position:relative` to your element styles if you want animation.
+
 
 ### Requirements
 * jQuery
